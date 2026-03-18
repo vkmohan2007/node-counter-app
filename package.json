@@ -1,0 +1,12 @@
+{
+  "name": "node-counter-app",
+  "version": "1.0.0",
+  "description": "A simple counter app built with Node.js",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 48px 56px;
+    text-align: center;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
+    min-width: 340px;
+}
+
+h1 {
+    color: #e0e0e0;
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+
+.counter-display {
+    font-size: 6rem;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1;
+    margin-bottom: 40px;
+    transition: transform 0.1s ease, color 0.3s ease;
+}
+
+.counter-display.positive {
+    color: #4ecca3;
+}
+
+.counter-display.negative {
+    color: #e05c5c;
+}
+
+.counter-display.bump {
+    transform: scale(1.15);
+}
+
+.btn-group {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.btn {
+    padding: 14px 24px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.15s, box-shadow 0.15s, opacity 0.15s;
+    letter-spacing: 0.5px;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.btn-increase {
+    background: #4ecca3;
+    color: #1a1a2e;
+    box-shadow: 0 4px 20px rgba(78, 204, 163, 0.35);
+}
+
+.btn-increase:hover {
+    opacity: 0.9;
+    box-shadow: 0 6px 24px rgba(78, 204, 163, 0.55);
+}
+
+.btn-decrease {
+    background: #e05c5c;
+    color: #fff;
+    box-shadow: 0 4px 20px rgba(224, 92, 92, 0.35);
+}
+
+.btn-decrease:hover {
+    opacity: 0.9;
+    box-shadow: 0 6px 24px rgba(224, 92, 92, 0.55);
+}
+
+.btn-reset {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: #aaa;
+    padding: 10px 32px;
+    font-size: 0.9rem;
+    margin-top: 4px;
+    border-radius: 8px;
+}
+
+.btn-reset:hover {
+    border-color: rgba(255, 255, 255, 0.5);
+    color: #fff;
+}
